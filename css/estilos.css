@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header{
+    background: black;
+    color: white;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: right;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+nav ul li a::before{
+    content: '';
+    display: block;
+    width: 0%;
+    background: white;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: 0.2s;
+
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+.flex-container{
+     width: 100%;
+     max-width: 1200px;
+     height: 430px;
+     display: flex;
+     flex: wrap;
+     justify-content: center;
+     margin: auto;
+}
+
+.flex-container .caja{
+    width: 300px;
+    height: 405px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.flex-container .caja:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.flex-container .caja img{
+    width: 250px;
+    height: 220px;
+}
+
+.flex-container .caja h4{
+    font-weight: 600;
+}
+
+.flex-container .caja p{
+    padding: 0 1rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.flex-container .caja a{
+    text-decoration: none;
+}
+
+
+.footer {
+    clear: both;
+    color: white;
+    background-color: #000000;
+    min-height: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contacto{
+    text-align: left;
+    padding: 10px;
+}
+
+.horario{
+    text-align: center;
+    padding: 0;
+}
+
+.horario img{
+    border-radius: 25px;
+    border: solid 3px;
+}
+
+
+.ubicacion{
+    text-align: center;
+}
+
+
+.cuerpo{
+    margin: 0 auto;
+    padding: 100px;
+    text-align: left;
+    width: 75%;
+
+}
+
+.cuerpo h1{
+    text-align: center;
+}
+
+.footer .contacto a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.form-compra {
+    width: 400px;
+    background: gray;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+
+.form-compra h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.form-compra p{
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 40px;
+}
+
+.form-compra a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-compra .botons{
+    width: 100%;
+    border: 12px;
+    background: black;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
